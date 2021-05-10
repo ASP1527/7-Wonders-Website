@@ -1,0 +1,89 @@
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  height: 10vh;
+  background: white;
+  border-bottom: 1px dashed dodgerblue;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a {
+  background: lightcoral;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: lightcoral;
+    margin: 5px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1200px at 90% -10%);
+    -webkit-clip-path: circle(1200px at 90% -10%);
+    pointer-events: all;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+main.hide {
+  visibility: hidden;
+}

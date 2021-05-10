@@ -1,0 +1,42 @@
+main {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  margin-top: 12vh;
+  width: 50%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.element {
+  margin-right: 15%;
+  margin-left: 15%;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dodgerblue;
+  border-bottom: 4px solid lightslategrey;
+  font-size: 18px;
+}
+
+.facts {
+  text-align: center;
+  padding: 0;
+  color: lightslategray;
+}
