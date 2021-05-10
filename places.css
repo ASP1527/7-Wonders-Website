@@ -7,36 +7,44 @@ main {
 
 .main {
   margin-top: 12vh;
-  width: 50%;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
 
 .element {
-  margin-right: 15%;
-  margin-left: 15%;
-  
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  margin: auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: 15vh 65vh 70%;
+  width: 55%;
+  grid-template-areas: "title" "image" "text";
+  border-radius: 18px;
+  background: whitesmoke;
+  box-shadow: 15px 15px 15px rgba(0.1,0.1,0.1,0.1);
+  text-align: center;
 }
 
 h1 {
+  grid-area: title;
   display: flex;
   justify-content: center;
   align-items: center;
   color: dodgerblue;
   border-bottom: 4px solid lightslategrey;
-  font-size: 18px;
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image {
+  grid-area: image;
+  background-size: cover;
 }
 
 .facts {
+  grid-area: text;
   text-align: center;
   padding: 0;
   color: lightslategray;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
