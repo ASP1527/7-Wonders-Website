@@ -5,12 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Sets the height, bg & bottom border */
 nav {
   height: 10vh;
   background: white;
   border-bottom: 1px dashed dodgerblue;
 }
 
+/* removes the default list style & sets all the content in 1 line */
 .nav-links {
   display: flex;
   list-style: none;
@@ -21,12 +23,14 @@ nav {
   margin: auto;
 }
 
+/* removes the default link style & sets a color */
 .nav-links li a {
   color: white;
   text-decoration: none;
   font-size: 22px;
 }
 
+/* makes the links have a squircle around them */
 a {
   background: lightcoral;
   text-align: center;
@@ -34,9 +38,10 @@ a {
   text-decoration: none;
   font-size: 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
+/* creates a burger menu when the scxreen width is below 768px */
 @media screen and (max-width: 768px) {
   .line {
     width: 30px;
@@ -77,6 +82,7 @@ a {
   }
 }
 
+/* makes the header stick to the top of the screen */
 .sticky {
   position: fixed;
   top: 0;
