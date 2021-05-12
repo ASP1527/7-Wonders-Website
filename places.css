@@ -5,11 +5,12 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
+/* adds margin */
 .main {
   margin-top: 12vh;
 }
 
-
+/* creates a card as a grid with 3 rows */
 .element {
   margin: auto;
   margin-top: 25px;
@@ -23,6 +24,7 @@ main {
   text-align: center;
 }
 
+/* defines where in the grid it goes */
 h1 {
   grid-area: title;
   display: flex;
@@ -35,11 +37,13 @@ h1 {
   padding-bottom: 15px;
 }
 
+/* defines where in the grid it goes */
 .image {
   grid-area: image;
   background-size: cover;
 }
 
+/* defines where in the grid it goes */
 .facts {
   grid-area: text;
   text-align: center;

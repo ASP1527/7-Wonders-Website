@@ -23,6 +23,7 @@ var images = [
 //function that loops through every title and creates a div container with the corresponding information and inserts it into the page before the div with a class divOut
 function getInfo() {
     for (i = 0; i < titles.length; i++) {
+        //creates divs that are then added to the html
         var newDiv = document.createElement("div");
         newDiv.classList.add("main");
         var newDiv2 = document.createElement("div");
@@ -33,11 +34,13 @@ function getInfo() {
         var description = descriptions[i];
         var list = document.createElement("div");
         list.classList.add("facts");
+        //maps all of the descriptions to the divs
         for (j = 0; j < description.length; j++) {
             var item = document.createElement("p");
             item.innerText = description[j];
             list.appendChild(item);
         }
+        //adds the image to the div
         var image = document.createElement("div");
         image.classList.add("image");
         var x = 'url(' + '"' + images[i] + '"' + ')'
@@ -46,6 +49,7 @@ function getInfo() {
         newDiv2.append(image);
         newDiv2.appendChild(list);
         newDiv.appendChild(newDiv2);
+        //places the div before this "divOut"
         var currentDiv = document.getElementById("divOut");
         document.body.insertBefore(newDiv, currentDiv);
         console.log(newDiv);

@@ -5,10 +5,12 @@ main {
     font-family: "Poppins", sans-serif;
 }
 
+/* adds a margin */
 .main {
     margin-top: 15vh;
 }
 
+/* creates a card */
 .main {
     margin: auto;
     padding: 20px;
@@ -24,6 +26,7 @@ main {
     font-size: 22px;
 }
 
+/* following code sets how bigh the elements of the form should be */
 input, textarea {
     width: 90%;
     padding: 10px;
@@ -45,6 +48,7 @@ select {
     text-align-last: center;
 }
 
+/* button design */
 .submit {
     width: 20%;
     padding: 5px 15px 5px 15px;
