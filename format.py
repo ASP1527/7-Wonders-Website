@@ -4,3 +4,4 @@ splitFile = readFile.split('\n')
 splitFile = list(filter(None, splitFile))
 print(splitFile)
 f.close()
+
